@@ -33,8 +33,9 @@
     <div class="login">
     <button class="btn btn-success">Login</button>
     </div>
-    <div class="registro">
-        <button class="btn border border-white" style="color: white;">Registrar</button>
+        <button class="btn btn-primary" style="color: white;" (click)="abrirModal()">modal</button>
+        <div class="" *ngIf="modalSwitch == true">
+          <app-login></app-login>
         </div>
   </nav>
 </div>

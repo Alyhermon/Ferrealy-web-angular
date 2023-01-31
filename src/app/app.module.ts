@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NabvarComponent } from './components/header/nabvar/nabvar.component';
 import { LoginModalComponent } from './components/header/nabvar/login-modal/login-modal.component';
-import { SlideComponent } from './components/slide/slide.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { InicioComponent } from './views/inicio/inicio.component';
 import { NosotrosComponent } from './views/nosotros/nosotros.component';
@@ -13,6 +12,9 @@ import { ProductosComponent } from './views/productos/productos.component';
 import { ContactosComponent } from './views/contactos/contactos.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { FormularioComponent } from './componentes-Contactos/formulario/formulario.component';
+import { SlideComponent } from './componentes-Inicio/slide/slide.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 const appRoutes: Routes = [
@@ -29,17 +31,19 @@ const appRoutes: Routes = [
     HeaderComponent,
     NabvarComponent,
     LoginModalComponent,
-    SlideComponent,
     FooterComponent,
     InicioComponent,
     NosotrosComponent,
     ProductosComponent,
-    ContactosComponent
+    ContactosComponent,
+    FormularioComponent,
+    SlideComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
